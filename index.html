@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro 001 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+     
+    <h1>Cadastro 001</h1>
+    <div  >
+        <form action="/action_page.php" class="form-1">
+        <div class="cad-usuario" >
+             <label>Nome Completo: </label>  
+          <input type="text" name="Cnomecompleto" id="nomecompleto" class="n-usuario" size="119px" placeholder="Seu nome completo..." >
+        </div> 
+        <div class="enderco">
+        <label for="">Rua / Av.:</label>
+           <input type="text" name="Crua" id="enderco" class="r-usuario" size="73,9px" placeholder="Rua ou Avenida ">
+        <label>Número:</label> 
+           <input type="text" name="Cnumero"id="enderco" class="r-usuario"size="17px" placeholder="Número    ">
+        </div>
+
+        <div class="cidade">
+            <label>Cidade:</label>
+            <input type="text" name="Ccidade"id="cidade" class="cid-usuario" size="56px" placeholder="Sua Cidade...">
+            <label>Estado:</label>
+            <input type="text" name="Cestado"id="cidade" class="cid-usuario" size="33px" placeholder="Seu Estado...">
+        </div>
+            <label>Telefone:</label>
+            <input type="text" name="Ctelefone" class="t-usuario" placeholder="(DDD) 0000-0000" required size="25px" >
+            <label>E-mail:</label>
+            <input type="text" name="Cemail" class="t-usuario" size="68px" placeholder="exemplo@exemplo.com.br" > 
+           <p>Comentário <textarea name="Ccomentario"></textarea></p>
+    
+        
+         <button type="button"     onclick="funcao(Cnomecompleto.value,Crua.value,Cnumero.value,Ccidade.value,Cestado.value,Ctelefone.value,Cemail.value )">Cadastrar</button>
+    </form>
+  </div>
+  
+    <table id="minhatabela">
+        <tr>  
+                 
+            <td>Nome Completo</td>
+            <td>Rua</td>
+            <td>Número</td>
+            <td>Cidade</td>
+            <td>Estado</td>
+            <td>Telefone</td>
+            <td>E-mail</td> 
+             
+             
+        </tr>
+    </table>
+   
+     
+   <script type="text/javascript" src="dados.js"></script>
+    
+</body>
+</html>
